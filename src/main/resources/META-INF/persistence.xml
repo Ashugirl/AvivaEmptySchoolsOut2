@@ -5,7 +5,7 @@
 
 
 
-    <persistence-unit name="pearlDataBase">
+    <persistence-unit name="AvivaDatabase">
 
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://db.intecbrussel.be:33100/student02"/>

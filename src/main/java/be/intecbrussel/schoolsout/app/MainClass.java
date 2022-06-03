@@ -10,8 +10,7 @@ import be.intecbrussel.schoolsout.services.UserService;
 
 import java.util.Locale;
 import java.util.Scanner;
-//TODO: belijk hoe je usages verwijdert
-//TODO: Aviva Grade probleem
+
 public class MainClass {
     private static int choiceOne= 9;
     private static int choiceTwo= 9;
@@ -28,7 +27,7 @@ public class MainClass {
 
                     switch (choiceOne){
                         case 1:choiceUsers();break;
-                        case 2:choiceUsers();break;
+                        case 2:choiceCourses();break;
                         case 3:choiceGrades();break;
                     }
 
@@ -71,8 +70,8 @@ public class MainClass {
         }
 
             switch (choiceTwo){
-                case 1:userService.findAllUsers();break;//LEVEL 1
-                case 2:userService.findOneUserById();break;//LEVEL 1
+                case 1:userService.findAllUsers();break;//LEVEL 1 done
+                case 2:userService.findOneUserById();break;//LEVEL 1 done
                 case 3:userService.createUser();break;//LEVEL 2
                 case 4:userService.updateUser();break;//LEVEL 3
                 case 5:userService.deleteUser();break;//LEVEL 3
