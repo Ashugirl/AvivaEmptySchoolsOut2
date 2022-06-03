@@ -6,6 +6,6 @@ import javax.persistence.Persistence;
 public class EMFactory {
 
     public static EntityManagerFactory getEmf(){
-        return Persistence.createEntityManagerFactory("pearlDataBase");
+        return Persistence.createEntityManagerFactory("AvivaDatabase");
     }
 }

@@ -10,8 +10,10 @@ import java.util.List;
 public class UserRepository {
 
     public User getOneById(String login){
+        EntityManager em = EMFactory.getEmf().createEntityManager();
+        return em.find(User.class, login);
 
-        return null;
+
     }
 
     public List<User> getAll(){

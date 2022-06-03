@@ -55,8 +55,13 @@ public class UserService {
 
     }
 
-    //TODO: Print een User + Person van de database af door een username in te geven
+    // Print een User + Person van de database af door een username in te geven
     public void findOneUserById(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter user name:");
+        User user = userRepository.getOneById(scanner.nextLine());
+        System.out.println(user);
+
 
     }
 

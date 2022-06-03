@@ -1,5 +1,7 @@
 package be.intecbrussel.schoolsout.data;
 
+
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -75,5 +77,15 @@ public class Course {
         this.description = description;
         this.maxGradeYouCanGet = maxGradeYouCanGet;
         this.gradesOfCourse = gradesOfCourse;
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", maxGradeYouCanGet=" + maxGradeYouCanGet +
+                '}';
     }
 }
